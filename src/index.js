@@ -1,4 +1,3 @@
-import _ from 'lodash'
 import { namehash } from './utils/namehash'
 import { abi as ensContract } from '@ensdomains/ens/build/contracts/ENS.json'
 import { abi as resolverContract } from '@ensdomains/resolver/build/contracts/Resolver.json'
