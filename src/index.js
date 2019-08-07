@@ -32,6 +32,7 @@ async function getENSContract() {
 
 const getENS = async ensAddress => {
   const networkId = await getNetworkId()
+  const hasRegistry = registries[networkId] !== undefined
 
   if (!ENS) {
     if (!hasRegistry && !ensAddress) {
