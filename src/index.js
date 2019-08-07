@@ -22,9 +22,7 @@ async function getNetworkId() {
 }
 
 async function getResolverContract(addr) {
-  const signer = await getSignerOrProvider()
-  const Resolver = new Contract(addr, resolverContract, signer)
-  return Resolver
+  return new web3.eth.Contract(resolverContract, addr, resolverContract)
 }
 
 async function getENSContract() {
