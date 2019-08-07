@@ -48,9 +48,7 @@ const getENS = async ensAddress => {
   const { ENS: ENSContract } = await getENSContract()
   ENS = ENSContract
 
-  return {
-    ENS: ENSContract
-  }
+  return ENSContract
 }
 
 async function resolve(input) {
